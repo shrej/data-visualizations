@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>c3 - JSON data with timeseries and date filter - jsFiddle demo</title>
+    <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+    <script type='text/javascript' src="https://rawgit.com/masayuki0812/c3/master/c3.js"></script>
+    <script type='text/javascript' src="js/climate-chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/masayuki0812/c3/master/c3.css">
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+
+    <script type='text/javascript'>
+    //<![CDATA[ 
+    window.onload = drawGraph;
+    //]]>
+    </script>
+</head>
+
+<body>
+    <div id="chart"></div>
+    <div id="explanation">
+        <h3>Explanation:</h3>
+        <p>
+          This graph represents the deviation in temprature from the 1951 – 1980 mean in 0.01 degrees, for each quarter between 1880 to 2015. Each line represents a deviation from the base period, and is color coded.<br>
+          A look at the graph shows a clear increase in temprature over the years. 
+          <br>The data represented here is a subset of data obtained from <a target="_blank" href="http://data.giss.nasa.gov/gistemp/">NASA Goddard Institute for Space Studies.</a>
+        </p>
+        <h3>Axes</h3>
+        <p>
+          <i>X Axis:</i> Years <br>
+          <i>Y Axis:</i> The deviation from the 1951 – 1980 mean in 0.01 degrees.
+        </p>
+        <h3> Interactivity</h3>
+        <p>
+          <b>Hover on chart:</b> See Values for that particular year.<br>
+          <b>Hover on quarter in legend:</b> See Data for that particular quarter only <br>
+          <b>Click on quarter in legend:</b> Enable/Disable lines for that quarter.<br>
+          <b>Scroll up/ down while on chart:</b> Zoom in out a particular period.
+        </p>
+    </div>
+</body>
+
+</html>

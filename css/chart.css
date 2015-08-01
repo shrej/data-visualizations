@@ -1,0 +1,14 @@
+.chart-heading {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.c3-axis-y-label, .c3-axis-x-label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h3{
+  color: gray;
+}
+
